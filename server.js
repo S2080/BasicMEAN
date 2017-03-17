@@ -51,9 +51,9 @@ var ToDo = mongoose.model('ToDo', {
 // http://localhost:8080/api/todos/B1c1tcMcg
 // http://localhost:8080/api/todos
 // routes
-app.get('*', function (req, res) {
-    res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
-});
+// app.get('*', function (req, res) {
+//     res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+// });
 app.get('/api/todos', function (request, response) {
     //use mongoose to get all the todos
     ToDo.find(function (err, todos) {
